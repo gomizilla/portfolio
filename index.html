@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>Test</header>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="nav-bar" role="navigation">
+            <ul class="nav-list">
+                <li>
+                    <a href="#about-me">About me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- parallax div here? -->
+        <div class="img1">
+            <div class="imgtext">
+                Dean Walton
+            </div>
+        </div>
+
+        <header role="banner">
+            <h1>Future software developer - Teacher - Goofball</h1>
+            <!-- <h2>Future software developer - Teacher - Goofball</h2> -->
+        </header>
+
+        <!-- parallax div here?  -->
+        <div class="img2">
+        </div>
+
+        <main role="main">
+            <!-- <div class="content"> -->
+                <section class="about-me">
+                    <h1 class="about-me-h1" id="about-me">About me</h1>
+                    <div class="about-me-container">
+                        <div class="about-me-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Optio harum consequuntur asperiores, doloremque laboriosam mollitia modi soluta 
+                                consequatur eos inventore fugit officia veritatis quos id 
+                                quisquam vel delectus tempore vero.
+                            </p>
+                        </div>
+                        <div class="about-me-pic-div">
+                            <img src="./assets/dean-pic.jpeg" class="dean-pic" alt="Picture of Dean Walton">
+                        </div>    
+                    </div>
+                    
+
+                </section>    
+            <!-- </div> -->
+            <!-- <div>
+                some section here? parallax?
+            </div> -->
+
+            <div class="img3">
+            </div>
+
+            <section class="projects-container" id="projects">
+                <h1 class="projects-h1">
+                    Projects
+                </h1>
+                <!-- <div class="projects">
+                    future project
+                </div> -->
+                <ul class="proj-list">
+                    <li class="project">
+                        Coming soon!
+                        <img src="./assets/computer-coffee.png" alt="Man accidentally spilling coffee on his laptop.">
+                    </li>
+                    <li class="project">
+                        Coming soon!
+                        <img src="./assets/comp-programming.png" alt="Man programming on a laptop.">
+                    </li>
+                    <li class="project">
+                        Coming soon!
+                        <img src="./assets/comp-typing.png" alt="Man typing loudly on a keyboard.">
+                    </li>
+                </ul>
+            </section>    
+        </main>
+        
+        <!-- parallax div here?  -->
+        <div class="img4">
+        </div>
+
+        <footer class="contacts" role="contentinfo" id="contacts">
+            <h1>Contact</h1>
+            <a href="https://github.com/gomizilla" target="_blank">
+                <img src="./assets/GitHub-Mark-32px.png" alt="Github website logo" id="github-link">
+            </a>
+            
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
