@@ -19,14 +19,14 @@ body, html {
     /* font-family: 'Times New Roman', Times, serif; */
     font-family: 'Arial Narrow Bold', sans-serif;
     /* font-size: 1.2rem; */
-    background-color: pink;
+    background-color: #484848;
     color: #ffffff;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
 .img1, .img2, .img3, .img4{
     position: relative;
-    opacity: 0.70;
+    /* opacity: 0.70; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
