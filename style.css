@@ -40,16 +40,16 @@ body, html {
 }
 .img2 {
     background-image: url(assets/img2.jpg);
-    min-height: 300px;
+    min-height: 450px;
 }
 .img3 {
     background-image: url(assets/img3.jpg);
-    min-height: 300px;
+    min-height: 450px;
 }
 
 .img4 {
     background-image: url(assets/img4.jpg);
-    min-height: 300px;
+    min-height: 450px;
 }
 
 .imgtext {
@@ -62,6 +62,7 @@ body, html {
     text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
     /* padding: 20px; */
     font-size: 5rem;
+    font-weight: bold;
     /* opacity: 1; */
     letter-spacing: 8px;
 }
@@ -69,15 +70,15 @@ body, html {
 header {
     /* height: auto; */
     background-color: #5a9bcc;
-    /* border: 2px solid brown; */
+    border: 2px solid transparent;
     text-align: center;
     font-size: 1.2rem;
-    padding-bottom: 1px;
+    /* padding-bottom: 1px; */
 }
 
 header h1 {
-    margin-top: 0;
-    padding-top: 50px;
+    /* margin-top: 0; */
+    /* padding-top: 50px; */
 }
 
 nav {
@@ -158,6 +159,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
 }
 
@@ -179,6 +181,49 @@ main {
 .about-me-text p {
     /* text-align: center; */
     font-size: 1.25rem;
+}
+
+.about-me-skills > h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-skills > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: flex;
+    flex-direction: column;
+    /* padding-left: 0px; */
+    padding: 0px;
+    /* width: 80vw; */
+    border: 1px solid black;
+    justify-items: center;
+    /* column-gap: 20px; */
+    /* place-self: center; */
+    /* row-gap: 20px; */
+    /* align-self: center; */
+    /* justify-self: center; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    row-gap: 20px;
+}
+
+.about-me-skills > ul > li {
+    border: 1px solid yellow;
+    /* justify-self: center; */
+    text-align: center;
+    width: 4.5rem;
+}
+
+.about-me-skills > ul > li > span {
+    /* font-size: inherit; */
+    font-size: 1rem;
+    place-self: center;
+}
+
+.about-me-skills > ul > li > i {
+    font-size: 3rem;
 }
 
 .projects-container {
@@ -231,9 +276,10 @@ footer {
     justify-content: center;
     /* align-content: center; */
     align-items: center;
+    text-align: center;
     min-height: 60px;
     /* bottom: 0; */
-    background-color: #484848;
+    /* background-color: #484848; */
     /* border: 2px solid gold; */
     /* text-align: center; */
     /* position: relative; */
@@ -286,6 +332,25 @@ footer h1 {
         width: 70%;
         margin: auto;
     }
+
+    .about-me-skills > h3 {
+        font-size: 2rem;
+    }
+
+    .about-me-skills > ul {
+        width: 80vw;
+    }
+    
+    .about-me-skills > ul > li > span {
+        /* font-size: inherit; */
+        font-size: 1.33rem;
+    }
+    
+    .about-me-skills > ul > li > i {
+        /* font-size: inherit; */
+        font-size: 4rem;
+    }
+
     .proj-list {
         display: flex;
         flex-direction: column;
