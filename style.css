@@ -7,7 +7,7 @@ body, html {
     /* width: 80vw; */
     /* height: 100vh; */
     /* min-height: 120vh; */
-    height: 100%;
+    /* height: 100%; */
     /* flex-direction: column;
     justify-content: space-evenly;
     background-color: lightgray; */
@@ -18,7 +18,7 @@ body, html {
     width: auto;
     /* font-family: 'Times New Roman', Times, serif; */
     font-family: 'Arial Narrow Bold', sans-serif;
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     background-color: #484848;
     color: #ffffff;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
@@ -36,7 +36,8 @@ body, html {
 
 .img1 {
     background-image: url(assets/img1.jpg);
-    min-height: 90%;
+    /* min-height: 90%; */
+    min-height: 90vh;
 }
 .img2 {
     background-image: url(assets/img2.jpg);
@@ -87,10 +88,14 @@ nav {
     justify-content: space-evenly; */
     /* height: auto; */
     background-color: #484848;
+    background-color: yellow;
+    font-size: 1.5rem;
     /* color: #ffffff; */
     /* border: 2px solid aqua; */
     /* text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;; */
     padding: 1px;
+    /* line-height: 50px; */
+    height: 100px;
 }
 
 a {
@@ -105,6 +110,9 @@ a:visited {
 
 a:hover {
     color: goldenrod;
+    transition: all .2s ease-in-out;
+    font-size: 1.6rem;
+    /* font-weight: 600; */
 }
 
 .nav-list {
@@ -116,6 +124,9 @@ a:hover {
 
 li {
     list-style: none;
+    text-align: center;
+    border: 1px solid red;
+    width: 300px;
 }
 
 main {
@@ -183,6 +194,13 @@ main {
     font-size: 1.25rem;
 }
 
+.about-me-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-me-skills > h3 {
     display: flex;
     justify-content: center;
@@ -207,6 +225,7 @@ main {
     /* justify-content: center; */
     /* align-items: center; */
     row-gap: 20px;
+    column-gap: 20px;
 }
 
 .about-me-skills > ul > li {
@@ -270,35 +289,63 @@ main {
     width: 100px;
 }
 
-footer {
+.contacts {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-content: center; */
     align-items: center;
     text-align: center;
-    min-height: 60px;
+    height: 20vh;
+    /* min-height: 60px; */
     /* bottom: 0; */
     /* background-color: #484848; */
     /* border: 2px solid gold; */
     /* text-align: center; */
     /* position: relative; */
     /* bottom: 0; */
+    background-color: #5a9bcc;
 }
 
-footer h1 {
-    font-size: 1.1rem;
+.contacts h1 {
+    font-size: 1rem;
 }
 
-#github-link {
-    margin: 10px;
-    height: 80%;
-    width: 80%;
+.contact-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100px;
+    height: 50px;
+    border: 1px solid purple;
 }
 
-#github-link:hover {
-    transform: scale(1.2);
+.contact-links {
+    
+    /* margin: 10px; */
+    /* height: 80%; */
+    /* width: 80%; */
+    font-size: 2rem;
+    /* padding: 20px; */
+    border: 1px solid yellow;
+
+}
+
+.contact-links:hover {
+    /* transform: scale(1.2); */
+    transition: all .2s ease-in-out;
+    font-size: 2.7rem;
     cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    font-size: .7rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -307,7 +354,8 @@ footer h1 {
         /* width: 80vw; */
         /* margin: auto; */
         /* margin-top: 10px; */
-        margin: 10px;
+        margin: 5px;
+        /* padding-bottom: 50px; */
     }
     
     header h2 {
@@ -343,7 +391,7 @@ footer h1 {
     
     .about-me-skills > ul > li > span {
         /* font-size: inherit; */
-        font-size: 1.33rem;
+        font-size: 1.1rem;
     }
     
     .about-me-skills > ul > li > i {
@@ -372,12 +420,30 @@ footer h1 {
     nav {
         display: none;
     }
+
+    /* .contact-images {
+        width: 17vw;
+    } */
+
+    .contact-images {
+        width: 150px;
+    }
+
+    .contact-images > a {
+        font-size: 3.5rem;
+    }
+    
+    footer {
+        /* padding: 10px; */
+        padding-top: 15px;
+        height: 1vh;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    body, html {
+    /* body, html {
         font-size: 1.5rem;
-    }
+    } */
     /* #github-link-big {
         display: block;
     }
