@@ -88,14 +88,14 @@ nav {
     justify-content: space-evenly; */
     /* height: auto; */
     background-color: #484848;
-    background-color: yellow;
+    /* background-color: yellow; */
     font-size: 1.5rem;
     /* color: #ffffff; */
     /* border: 2px solid aqua; */
     /* text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;; */
     padding: 1px;
     /* line-height: 50px; */
-    height: 100px;
+    height: 80px;
 }
 
 a {
@@ -125,7 +125,7 @@ a:hover {
 li {
     list-style: none;
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 300px;
 }
 
@@ -171,7 +171,7 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 95%;
 }
 
 .about-me-text, .about-me-pic-div {
@@ -289,6 +289,133 @@ main {
     width: 100px;
 }
 
+/* testing */
+
+
+
+.project-container {
+    margin: 0 auto;
+    padding: 10px;
+    border: 0;
+    width: 95%;
+    border: 1px solid red;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px 
+        rgba(50, 50 93, .05), 0 15px 35px
+        rgba(50, 50, 93, .1), 0 5px 15px
+        rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.project-image {
+    /* border: 2px solid gold; */
+    margin: 30px;
+    border-radius: 10px;
+    /* margin-top: 25px; */
+    /* margin-bottom: -100px; */
+    width: 36%;
+    height: auto;
+    /* width: 36%; */
+    /* height: 30%; */
+    /* height: fit-content; */
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+.projet-title {
+    font-weight: 500;
+    font-size: 1.8em;
+    line-height: 38px;
+    color: #525f7f;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.project-description {
+    margin-bottom: 30px;
+    line-height: 27px;
+    color: #525f7f;
+}
+
+.project-background {
+    /* border: 5px solid purple; */
+    position: absolute;
+    top: -10px;
+    right: -1px;
+    height: 110%;
+    width: 60%;
+    /* background: url(./assets/tangoatsumare-logo.webp); */
+    /* background: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMxNiIgdmlld0JveD0iMCAwIDQ0NiAzMTYiIHdpZHRoPSI0NDYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09IiI+PHBhdGggZD0ibTI3NC41NDkwNTQgMzE2aDE3MS40NTA5NDZ2LTMxNmgtMzY2LjIyMTgzMDNsLTI3LjgxNjg1NjMgMTExLjMwNzAxIDUxLjEzNjc5NDYgMjA0LjY5Mjk5eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Im0yNC4xNTEwOTI1IDBoNTUuNjk3ODE1bC0yNy44ODg4ODQyIDExMS4zMjA5ODR6IiBmaWxsPSIjYzFkZGZmIiBvcGFjaXR5PSIuNTU2ODM5Ii8+PHBhdGggZD0ibTUxLjk2MDMxMTkgMTExLjMxODAyNCA1MS4xNDkyMjcxIDIwNC42ODE5NzZoLTEwMi4zMTE1NTcxNHoiIGZpbGw9IiM5Mzg3ZTQiIG9wYWNpdHk9Ii41MjY2MDgiLz48L2c+PC9zdmc+); */
+    background-size: cover;
+    /* border: 2px solid orange; */
+}
+
+.project-content {
+    padding: 60px;
+    width: 40%;
+    z-index: 2;
+    color: black;
+    text-shadow: none;
+    /* border: 2px solid black; */
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-skill {
+    border-radius: 4px;
+    border: 2px solid #92eac0;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: .85em;
+    color: #535f7f;
+    text-shadow: none;
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    margin-right: 20px;
+    margin-top: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px
+        rgba(50, 50, 93, .11), 0 1px 3px
+        rgba(0, 0, 0, .08);
+    border-radius: 4px;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    transition: all .15s ease;
+    font-size: .9em;
+    font-weight: 600;
+    box-sizing: border-box;
+    background: #747fe0;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* testing */
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -335,7 +462,7 @@ main {
 .contact-links:hover {
     /* transform: scale(1.2); */
     transition: all .2s ease-in-out;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     cursor: pointer;
 }
 
@@ -417,6 +544,36 @@ footer {
         height: 80%;
         width: 80%;
     }
+
+    .project-card {
+        margin-bottom: 40px;
+    }
+
+    .project-content {
+        width: 100%;
+        padding: 35px;
+        box-sizing: border-box;
+    }
+    
+    .project-image {
+        display: none;
+    }
+
+    .project-background {
+        display: none;
+    }
+
+    /* .project-container {
+        width: 100%;
+        padding: 35px;
+        box-sizing: border-box;
+    } */
+
+    .project-skills {
+        
+    }
+
+
     nav {
         display: none;
     }
