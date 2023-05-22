@@ -9,10 +9,12 @@ body, html {
     background-color: #484848;
     color: #ffffff;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    overflow-x: hidden;
 }
 
 .img1, .img2, .img3, .img4{
-    /* position: relative; */
+    position: relative;
+    top: 0px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +24,7 @@ body, html {
 
 .img1 {
     background-image: url(assets/img1.jpg);
-    min-height: 90vh;
+    min-height: 600px;
 }
 .img2 {
     background-image: url(assets/img2.jpg);
@@ -166,13 +168,15 @@ main {
 }
 
 .about-me-skills > ul > li {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 4.5rem;
 }
 
 .about-me-skills > ul > li > span {
-    font-size: 1rem;
-    place-self: center;
+    font-size: 0.8rem;
+    /* place-self: center; */
 }
 
 .about-me-skills > ul > li > i {
@@ -366,6 +370,7 @@ footer {
     height: 10vh;
     text-align: center;
     font-size: 1rem;
+    background-color: #5a9bcc;
 }
 
 @media only screen and (max-width: 800px) {
@@ -457,9 +462,9 @@ footer {
     }
     
     footer {
-        padding-top: 15px;
+        padding: 25px 0 25px 0;
         height: 1vh;
-        margin: 10px 0 10px 0;
+        /* margin: 10px 0 10px 0; */
     }
 }
 
